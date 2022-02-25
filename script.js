@@ -17,18 +17,33 @@
 
 // es 1.2
 
-const word1 = prompt('prima parola').trim();
-const word2 = prompt('seconda parola').trim();
+// const word1 = prompt('prima parola').trim();
+// const word2 = prompt('seconda parola').trim();
 
-let lengthWord1 = word1.length;
-let lengthWord2 = word2.length;
+// let lengthWord1 = word1.length;
+// let lengthWord2 = word2.length;
 
-if (lengthWord1 > lengthWord2) {
-    alert(`${word1} ${word2}`);
+// if (lengthWord1 > lengthWord2) {
+//     alert(`${word1} ${word2}`);
 
-} else if(lengthWord2 > lengthWord1) {
-    alert(`${word2} ${word1}`);
+// } else if(lengthWord2 > lengthWord1) {
+//     alert(`${word2} ${word1}`);
     
-}else {
-    alert('le parole hanno la stessa lunghezza');
+// }else {
+//     alert('le parole hanno la stessa lunghezza');
+// }
+
+////////////////////////////////////////////////////////
+
+// es 1.3
+
+let number;
+let result = 0;
+
+for (let i = 0; i < 10; i++) {
+    number = parseFloat(prompt('inserisci un numero'));
+    result += number;
+    
 }
+
+alert(`il risultato e' ${result}`);
