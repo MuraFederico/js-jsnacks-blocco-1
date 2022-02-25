@@ -82,16 +82,38 @@
 
 // es 1.5
 
-const oddNumbersArray = [];
+// const oddNumbersArray = [];
 
+// for (let i = 0; i < 6; i++) {
 
-for (let i = 0; i < 6; i++) {
+//     const userNunber = prompt('inserisci un numero');
+//     if (userNunber % 2 != 0){
+//         oddNumbersArray.push(userNunber);
+//     }
+    
+// }
 
-    const userNunber = prompt('inserisci un numero');
-    if (userNunber % 2 != 0){
-        oddNumbersArray.push(userNunber);
-    }
+// alert(`i seguenti numeri inseriti erano dispari: ${oddNumbersArray}`);
+
+////////////////////////////////////////////////////////
+
+// es 1.6
+
+let userNumber = prompt('inserisci un numero a 4 cifre');
+
+while (userNumber.length != 4) {
+    alert('il numero inserito non ha 4 cifre');
+    userNumber = prompt('inserisci un numero a 4 cifre');
+
+}
+
+let somma = 0;
+
+for (let i = 0; i < userNumber.length; i++) {
+    somma += parseInt(userNumber[i]);
     
 }
 
-alert(`i seguenti numeri inseriti erano dispari: ${oddNumbersArray}`);
+alert(`la somma delle cifre e': ${somma}`);
+
+////////////////////////////////////////////////////////
