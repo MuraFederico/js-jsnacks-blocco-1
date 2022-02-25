@@ -37,13 +37,44 @@
 
 // es 1.3
 
-let number;
-let result = 0;
+// let number;
+// let result = 0;
 
-for (let i = 0; i < 10; i++) {
-    number = parseFloat(prompt('inserisci un numero'));
-    result += number;
+// for (let i = 0; i < 10; i++) {
+//     number = parseFloat(prompt('inserisci un numero'));
+//     result += number;
+    
+// }
+
+// alert(`il risultato e' ${result}`);
+
+////////////////////////////////////////////////////////
+
+// es 1.4
+
+const userName = prompt('inserisci il tuo nome');
+const invitedList = ['federico', 
+    'giacomo', 
+    'luigi', 
+    'marco', 
+    'francesco' , 
+    'chiara', 
+    'giuliana', 
+    'maria'
+];
+
+let invited = false;
+
+for (let i = 0; i < invitedList.length; i++) {
+    if (userName.toLowerCase() == invitedList[i].toLowerCase()){
+        invited = true;
+    };
     
 }
 
-alert(`il risultato e' ${result}`);
+if (invited) {
+    alert('benvenuto alla festa');
+}else {
+    alert('non sei stato invitato');
+}
+
