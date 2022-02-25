@@ -52,29 +52,46 @@
 
 // es 1.4
 
-const userName = prompt('inserisci il tuo nome');
-const invitedList = ['federico', 
-    'giacomo', 
-    'luigi', 
-    'marco', 
-    'francesco' , 
-    'chiara', 
-    'giuliana', 
-    'maria'
-];
+// const userName = prompt('inserisci il tuo nome');
+// const invitedList = ['federico', 
+//     'giacomo', 
+//     'luigi', 
+//     'marco', 
+//     'francesco' , 
+//     'chiara', 
+//     'giuliana', 
+//     'maria'
+// ];
 
-let invited = false;
+// let invited = false;
 
-for (let i = 0; i < invitedList.length; i++) {
-    if (userName.toLowerCase() == invitedList[i].toLowerCase()){
-        invited = true;
-    };
+// for (let i = 0; i < invitedList.length; i++) {
+//     if (userName.toLowerCase() == invitedList[i].toLowerCase()){
+//         invited = true;
+//     };
+    
+// }
+
+// if (invited) {
+//     alert('benvenuto alla festa');
+// }else {
+//     alert('non sei stato invitato');
+// }
+
+////////////////////////////////////////////////////////
+
+// es 1.5
+
+const oddNumbersArray = [];
+
+
+for (let i = 0; i < 6; i++) {
+
+    const userNunber = prompt('inserisci un numero');
+    if (userNunber % 2 != 0){
+        oddNumbersArray.push(userNunber);
+    }
     
 }
 
-if (invited) {
-    alert('benvenuto alla festa');
-}else {
-    alert('non sei stato invitato');
-}
-
+alert(`i seguenti numeri inseriti erano dispari: ${oddNumbersArray}`);
