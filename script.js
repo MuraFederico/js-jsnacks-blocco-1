@@ -99,21 +99,52 @@
 
 // es 1.6
 
-let userNumber = prompt('inserisci un numero a 4 cifre');
+// let userNumber = prompt('inserisci un numero a 4 cifre');
 
-while (userNumber.length != 4) {
-    alert('il numero inserito non ha 4 cifre');
-    userNumber = prompt('inserisci un numero a 4 cifre');
+// while (userNumber.length != 4) {
+//     alert('il numero inserito non ha 4 cifre');
+//     userNumber = prompt('inserisci un numero a 4 cifre');
 
-}
+// }
 
-let somma = 0;
+// let somma = 0;
 
-for (let i = 0; i < userNumber.length; i++) {
-    somma += parseInt(userNumber[i]);
+// for (let i = 0; i < userNumber.length; i++) {
+//     somma += parseInt(userNumber[i]);
     
-}
+// }
 
-alert(`la somma delle cifre e': ${somma}`);
+// alert(`la somma delle cifre e': ${somma}`);
 
 ////////////////////////////////////////////////////////
+
+// es 2.1
+
+// CON WHILE
+
+// let i = 1;
+// let sum = 0;
+// let media = 0;
+
+// while(i <= 10) {
+//     sum += i++;
+// }
+
+// media = sum / (i - 1);
+
+// console.log(sum, media);
+
+// let sum2 = 0; 
+
+// CON FOR
+
+// let sum = 0;
+
+// for (i = 1; i <= 10; i++) {
+//     sum += i;
+// }
+
+// let average = sum / (i - 1);
+
+// console.log(sum, average);
+
