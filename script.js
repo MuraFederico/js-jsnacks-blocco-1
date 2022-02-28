@@ -202,8 +202,23 @@ const arrSurnames = [
     'Fumagalli'
 ];
 
-for (i = 0; i < 3; i++) {
+const arrInvites = [];
+
+let iterations = 0;
+
+while (arrInvites.length < 3) {
+
     let randomName = arrNames[Math.floor(Math.random() * arrNames.length)];
     let randomSurname = arrSurnames[Math.floor(Math.random() * arrSurnames.length)];
-    alert(`${randomName} ${randomSurname}`);
-}
+
+    if (arrInvites.includes(`${randomName} ${randomSurname}`) == false){
+        arrInvites.push(`${randomName} ${randomSurname}`);
+    }
+    iterations += 1;
+    // alert(`${randomName} ${randomSurname}`);
+};
+
+console.log(iterations, arrInvites);
+
+alert(arrInvites)
+
