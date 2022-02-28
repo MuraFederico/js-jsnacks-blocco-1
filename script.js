@@ -184,3 +184,26 @@
 // }else {
 //     alert(usernNumber + 1);
 // }
+
+////////////////////////////////////////////////////////
+
+// es 2.4
+
+const arrNames = [
+    'Giovanni',
+    'Antonio',
+    'Federico',
+    'Marco' 
+];
+
+const arrSurnames = [
+    'Rossi',
+    'Bianchi',
+    'Fumagalli'
+];
+
+for (i = 0; i < 3; i++) {
+    let randomName = arrNames[Math.floor(Math.random() * arrNames.length)];
+    let randomSurname = arrSurnames[Math.floor(Math.random() * arrSurnames.length)];
+    alert(`${randomName} ${randomSurname}`);
+}
