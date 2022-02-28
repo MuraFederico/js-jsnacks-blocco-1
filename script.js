@@ -148,3 +148,27 @@
 
 // console.log(sum, average);
 
+////////////////////////////////////////////////////////
+
+// es 2.2
+
+// CON WHILE
+
+// let i = 0
+// let sum = 0;
+// while (i < 5) {
+//     let usernNumber = parseFloat(prompt('inserisci un numero'));
+//     sum += usernNumber;
+//     i++;
+// }
+// console.log(sum);
+
+// CON FOR
+
+// let sum = 0;
+
+// for (i = 0; i < 5; i++) {
+//     let usernNumber = parseFloat(prompt('inserisci un numero'));
+//     sum += usernNumber;
+// }
+// console.log(sum);
