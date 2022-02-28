@@ -172,3 +172,15 @@
 //     sum += usernNumber;
 // }
 // console.log(sum);
+
+////////////////////////////////////////////////////////
+
+// es 2.3
+
+// let usernNumber = parseInt(prompt('inserisci un numero'));
+
+// if (usernNumber % 2 == 0) {
+//     alert(usernNumber);
+// }else {
+//     alert(usernNumber + 1);
+// }
